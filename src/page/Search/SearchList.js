@@ -48,13 +48,14 @@ function SearchList(props) {
       }
       
       setTotal(result);  //set tổng sản phẩm để làm pagination
-
+     
       const quantityData = await Paginate(skip,category);  //lấy ra số sản phẩm khi thay đổi vào page trang và gới hạn hiển thị 12 sản phẩm
 
       const resultFinal = quantityData.filter((item) => {
         return result.some((subItem) => subItem.id === item.id);  //lọc ra những sản phẩm mà người dùng tìm kiếm để làm pagination
       });
-
+       
+      
       if (sortRender) {
         if (sortRender === "Giá thấp đến cao") {  //dữ liệu khi dispatch từ componet FilterProduct sẽ dc sắp xếp ở dưới đây
           resultFinal.sort((a, b) => {
@@ -77,6 +78,7 @@ function SearchList(props) {
     fetchAPI();
   }, [dataMerge, skip,title]);
 
+  
   return (
     <>
       {query.length > 0 ? (
@@ -93,7 +95,7 @@ function SearchList(props) {
               <div className="mt-3" style={{ textAlign: "center" }}>
                 <Pagination
                   defaultCurrent={1}
-                  pageSize={10}
+                  pageSize={30}
                   total={total.length}
                   onChange={handleChange}
                 />

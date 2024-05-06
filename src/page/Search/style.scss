@@ -127,6 +127,10 @@
     }
 }
 
-:where(.css-dev-only-do-not-override-1kuana8).ant-rate{
-    font-size: 12px !important;
+@media (max-width:767.98px) {
+    
+    :where(.css-dev-only-do-not-override-1kuana8).ant-rate,:where(.css-dev-only-do-not-override-128z1ng).ant-rate{
+        font-size: 8px !important;
+    }
 }
+

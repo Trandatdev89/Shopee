@@ -5,6 +5,6 @@ export const Paginate=async(skip,cate)=>{
     if(cate){
         cateDraw=`Category=${cate}`;
     }
-    const res= await get(`products?_page=${skip}&_limit=150&${cateDraw}`);
+    const res= await get(`products?_page=${skip}&_limit=100&${cateDraw}`);
     return res;
 }
