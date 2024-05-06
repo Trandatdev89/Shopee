@@ -1,0 +1,78 @@
+.Timkiem {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+
+    &__max {
+        color: var(--color-one);
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    &__img {
+        aspect-ratio: 1/1;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__fixed {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .26);
+        color: var(--color-one);
+        text-align: center;
+    }
+
+    &__item {
+        position: relative;
+        padding: 5px;
+    }
+
+    &__bitton {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 50px !important;
+        height: 50px !important;
+        object-fit: contain !important;
+    }
+
+    &__title {
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    @media (max-width:"576.98px") {
+        &__img{
+            aspect-ratio: 16/9;
+            
+        }
+        &__bitton {
+            width: 15px !important;
+            height: 15px !important;
+            top:10px;
+            left: 10px;
+        }
+        &__title{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        &__fixed{
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}

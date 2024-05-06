@@ -1,0 +1,71 @@
+.Timkiem {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+}
+.Timkiem__max {
+  color: var(--color-one);
+  font-size: 25px;
+  padding: 15px;
+}
+.Timkiem__img {
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.Timkiem__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Timkiem__fixed {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.26);
+  color: var(--color-one);
+  text-align: center;
+}
+.Timkiem__item {
+  position: relative;
+  padding: 5px;
+}
+.Timkiem__bitton {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 50px !important;
+  height: 50px !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+.Timkiem__title {
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 20px 0;
+}
+@media (max-width: 576.98px) {
+  .Timkiem__img {
+    aspect-ratio: 16/9;
+  }
+  .Timkiem__bitton {
+    width: 15px !important;
+    height: 15px !important;
+    top: 10px;
+    left: 10px;
+  }
+  .Timkiem__title {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .Timkiem__fixed {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,16 @@
+.goback{
+    padding: 10px 20px;
+    background-color: var(--color-one);
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+@media (max-width:767.98px) {
+    .goback{
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+}

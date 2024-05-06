@@ -1,0 +1,110 @@
+.Search__item {
+  border: 1px solid #ddd;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.Search__img1 {
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.Search__img1 img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Search__img1 img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Search__sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  width: 80px;
+  height: auto;
+  background-color: var(--color-one);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.Search__content {
+  padding: 10px;
+}
+.Search__title {
+  font-size: 23px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.Search__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.Search__price div:nth-child(1) {
+  color: var(--color-one);
+  font-size: 18px;
+}
+.Search__price div:nth-child(2) {
+  font-size: 18px;
+}
+.Search__rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.Search__locate {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #26AA99;
+}
+.Search__locate div:nth-child(1) {
+  margin-right: 10px;
+}
+.Search__multiple {
+  margin-top: 20px;
+}
+@media (max-width: 576.98px) {
+  .Search__img1 img:nth-child(2) {
+    width: 40px;
+    height: 20px;
+  }
+  .Search__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .Search__sale {
+    font-size: 10px;
+    width: 60px;
+  }
+  .Search__price div:nth-child(1) {
+    color: var(--color-one);
+    font-size: 12px;
+  }
+  .Search__price div:nth-child(2) {
+    font-size: 12px;
+  }
+  .Search__locate {
+    font-size: 12px;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1kuana8).ant-rate {
+  font-size: 12px !important;
+}/*# sourceMappingURL=style.css.map */

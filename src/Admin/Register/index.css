@@ -1,0 +1,18 @@
+.register {
+  background-image: url("https://tse1.mm.bing.net/th?id=OIP.YmjM3GWFvAkqpYcTWYPf7gHaE7&pid=Api&rs=1&c=1&qlt=95&w=184&h=122");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__box {
+  max-width: 800px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */

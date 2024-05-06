@@ -1,0 +1,102 @@
+.HeaderAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &__logo {
+        font-size: 25px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        span {
+            color: var(--color-one);
+        }
+
+    }
+
+    &__todo {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    &__notify {
+        position: relative;
+
+        &::after {
+            width: 1px;
+            content: "";
+            position: absolute;
+            height: 100%;
+            background-color: #ddd;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    &__bars {
+        display: none;
+    }
+    &__company{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    &__user{
+        color: var(--color-one);
+    }
+
+    @media (max-width:767.98px) {
+        &__bars {
+
+            display: block;
+        }
+        &__logo{
+            display: none;
+        }
+        &__content{
+            font-size: 12px;       
+        }
+    }
+}
+
+.drawer {
+    display: none;
+}
+
+@media (max-width:767.98px) {
+
+    .sider {
+        display: none;
+    }
+
+    .drawer {
+        display: block;
+    }
+}
+:where(.css-dev-only-do-not-override-1kuana8).ant-drawer .ant-drawer-body{
+    padding: 0;
+}

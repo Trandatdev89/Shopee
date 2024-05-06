@@ -1,0 +1,250 @@
+.Product__main {
+  background-color: #fff;
+  padding: 10px;
+}
+.Product__img {
+  aspect-ratio: 3/4;
+}
+.Product__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Product__content {
+  padding: 30px;
+}
+.Product__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.Product__title span {
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--color-one);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.Product__rate {
+  color: var(--color-one);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.Product__bitton {
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+}
+.Product__bitton img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Product__sale {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.Product__sale div {
+  color: var(--color-one);
+}
+.Product__sale div:nth-child(1) {
+  margin-right: 20px;
+}
+.Product__sale div span {
+  color: #000;
+  opacity: 0.6;
+}
+.Product__stock {
+  font-size: 20px;
+  color: var(--color-one);
+  margin: 10px 0;
+}
+.Product__stock span {
+  color: #000;
+  opacity: 0.6;
+}
+.Product__tranform {
+  font-size: 20px;
+  color: var(--color-one);
+  margin: 10px 0;
+}
+.Product__tranform img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Product__tranform span {
+  color: #000;
+  opacity: 0.6;
+}
+.Product__quatity {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.Product__quatity span {
+  color: #000;
+  opacity: 0.6;
+}
+.Product__quatity input {
+  width: 100px;
+  text-align: center;
+  height: 100%;
+}
+.Product__quatity button {
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.Product__btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Product__btn--plus {
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
+  font-size: 18px;
+  padding: 15px 20px;
+  background-color: #fff5f5;
+  margin-right: 20px;
+}
+.Product__btn--plus:hover {
+  background-color: #fff;
+}
+.Product__btn--buy {
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 20px;
+  background-color: var(--color-one);
+  border: none;
+}
+.Product__author {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+}
+.Product__company {
+  display: flex;
+  align-items: center;
+}
+.Product__logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% #ddd;
+  margin-right: 25px;
+}
+.Product__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Product__info h4 {
+  font-size: 20px;
+}
+.Product__info p {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.7;
+}
+.Product__info button {
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
+  font-size: 16px;
+  padding: 5px 15px;
+  background-color: #fff5f5;
+  border-radius: 5px;
+}
+.Product__info button:hover {
+  background-color: #fff;
+}
+.Product__desc {
+  margin: 30px 0;
+  background-color: #fff;
+}
+.Product__base {
+  padding: 0 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+.Product__base div {
+  text-align: left;
+}
+.Product__base div span {
+  color: #000;
+  opacity: 0.7;
+  margin-right: 40px;
+}
+@media (max-width: 767.98px) {
+  .Product__img {
+    aspect-ratio: 16/9;
+  }
+  .Product__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Product__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .Product__title span {
+    font-size: 12px;
+  }
+  .Product__content {
+    padding: 10px;
+  }
+  .Product__sale {
+    font-size: 16px;
+  }
+  .Product__stock, .Product__tranform, .Product__quatity {
+    font-size: 16px;
+  }
+  .Product__quatity {
+    margin: 10px 0;
+  }
+  .Product__quatity input {
+    max-width: 50px;
+  }
+  .Product__quatity button {
+    padding: 2px 15px;
+    font-size: 15px;
+  }
+  .Product__btn {
+    padding: 0;
+  }
+  .Product__btn--plus {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-right: 15px;
+  }
+  .Product__btn--buy {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .Product__author {
+    padding: 15px;
+  }
+  .Product__info h4 {
+    font-size: 16px;
+  }
+  .Product__info p {
+    font-size: 12px;
+  }
+  .Product__info button {
+    font-size: 12px;
+  }
+  .Product__desc h3 {
+    padding: 15px !important;
+    font-size: 16px;
+  }
+  .Product__base {
+    padding: 10px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

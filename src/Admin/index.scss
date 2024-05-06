@@ -1,0 +1,115 @@
+.login {
+    background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__box {
+        max-width: 800px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        background-color: #fff;
+
+
+    }
+}
+
+
+.Admin {
+    &__box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        height: 100%;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(246, 215, 158);
+        color: var(--color-one);
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+
+        span {
+            display: block;
+            color: #000;
+            &:nth-child(2) {
+                color:#7c6e6e;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+    &__chart{
+        padding: 50px 0;
+    }
+
+    &__chartLine,
+    &__chartPie {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        height: 95%;
+    }
+    @media (max-width:767.98px) {
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
+
+.statisic {
+    padding-bottom: 80px;
+
+    &__chart {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 40px;
+        height: 100%;
+    }
+
+    &__box {
+        height: 100%;
+    }
+
+    &__scale {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #ddd;
+
+    }
+
+    &__salary {
+        font-size: 25px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+}
