@@ -75,65 +75,65 @@ function BuyFinish() {
           <Row gutter={[15, 15]}>
             {data.map((item) => (
               <Col span={24} key={item.id}>
-                <Link to={`/tranform-finish/${item.id}`} style={{textDecoration:"none"}}>
-                <Card
-                  title={item?.infoCompany?.companyName}
-                  extra={
-                    <div className="BuyFinish__head">
-                      <span> Đơn hàng đã được giao thành công</span>
-                      <span>
-                        {" "}
-                        {item.statusSend ? "hoàn thành" : "đang giao"}
-                      </span>
-                    </div>
-                  }
-                  style={{
-                    width: 300,
-                  }}
+                <Link
+                  to={`/tranform-finish/${item.id}`}
+                  style={{ textDecoration: "none" }}
                 >
-                  <div className="BuyFinish__body">
-                    <div className="BuyFinish__img">
-                      <img src={item.info.thumbnail} alt="loading..." />
-                    </div>
-                    <div className="BuyFinish__content">
-                      <div className="BuyFinish__wrap">
-                        <h4>{item.info.title}</h4>
-                        <div className="BuyFinish__desc">
-                          Phân loại hàng: {item.info.Category}
+                  <Card
+                    title={item?.infoCompany?.companyName}
+                    extra={
+                      <div className="BuyFinish__head">
+                        <span> Trạng thái giao hàng</span>
+                        <span>
+                          {" "}
+                          {item.statusSend ? (<p style={{color:"green",display:"inline-block"}}>Hoàn Thành</p>) : (<p style={{color:"var(--color-one)",display:"inline-block"}}>Đang Giao</p>)}
+                        </span>
+                      </div>
+                    }
+                  >
+                    <div className="BuyFinish__body">
+                      <div className="BuyFinish__img">
+                        <img src={item.info.thumbnail} alt="loading..." />
+                      </div>
+                      <div className="BuyFinish__content">
+                        <div className="BuyFinish__wrap">
+                          <h4>{item.info.title}</h4>
+                          <div className="BuyFinish__desc">
+                            Phân loại hàng: {item.info.Category}
+                          </div>
+                          <div>Số lượng: x{item.quantity}</div>
                         </div>
-                        <div>Số lượng: x{item.quantity}</div>
-                      </div>
-                      <div className="BuyFinish__price">
-                        Đơn giá: {item.info.price} VND
+                        <div className="BuyFinish__price">
+                          Đơn giá: {item.info.price} VND
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="BuyFinish__foot">
-                    <div className="BuyFinish__money">
-                      Thành tiền :{item.quantity * item.info.price} VND
-                    </div>
-                    <div className="BuyFinish__btn">
-                      <button
-                        className="Product__btn Product__btn--buy"
-                        style={{ whiteSpace: "nowrap" }}
-                        onClick={() => handleDel(item.id)}
-                      >
-                        Xoá
-                      </button>
-                      <Link
-                        style={{ textDecoration: "none" }}
-                        to={`/products/${item.idProduct}`}
-                      >
+                    <div className="BuyFinish__foot">
+                      <div className="BuyFinish__money">
+                        Thành tiền :{item.quantity * item.info.price} VND
+                      </div>
+                      <div className="BuyFinish__btn">
                         <button
                           className="Product__btn Product__btn--buy"
                           style={{ whiteSpace: "nowrap" }}
+                          onClick={() => handleDel(item.id)}
                         >
-                          Mua lại
+                          Xoá
                         </button>
-                      </Link>
+                        <Link
+                          style={{ textDecoration: "none" }}
+                          to={`/products/${item.idProduct}`}
+                        >
+                          <button
+                            className="Product__btn Product__btn--buy"
+                            style={{ whiteSpace: "nowrap" }}
+                          >
+                            Mua lại
+                          </button>
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                </Card>
+                  </Card>
                 </Link>
               </Col>
             ))}

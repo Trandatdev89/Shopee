@@ -400,12 +400,20 @@ a {
         font-size: 12px;
         padding: 5px 5px;
     }
+    :where(.css-dev-only-do-not-override-128z1ng).ant-card .ant-card-head{
+        font-size: 12px;
+    }
 }
 
 :where(.css-dev-only-do-not-override-1kuana8).ant-card-bordered {
     width: 100% !important;
 }
 
+
+
+
+
+// Progress:
 .step-wizard {
     height: 100vh;
     width: 100%;
@@ -509,3 +517,6 @@ a {
 .current-item .progress-count{
     color: #21d4fd;
 }
+
+
+//End Progress:
