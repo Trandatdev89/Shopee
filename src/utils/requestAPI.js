@@ -1,4 +1,4 @@
-const API_DOMAIN="https://json-server-shopee.onrender.com/";
+const API_DOMAIN="http://localhost:3002/";
 
 
 export const get=async(path)=>{

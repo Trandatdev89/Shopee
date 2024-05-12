@@ -77,6 +77,12 @@ function ManageOrder(){
       responsive: ["xxl", "xl", "lg", "md", "sm", "xs"],
     },
     {
+      key: "createAt",
+      dataIndex: "createAt",
+      title: "Ngày đặt",
+      responsive: ["xxl", "xl", "lg", "md", "sm", "xs"],
+    },
+    {
       key: "status",
       title: "Trạng thái gửi",
       render:(_,record)=>{

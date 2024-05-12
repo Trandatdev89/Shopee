@@ -101,6 +101,9 @@ function BuyFinish() {
                           <div className="BuyFinish__desc">
                             Phân loại hàng: {item.info.Category}
                           </div>
+                          <div className="BuyFinish__create">
+                            Ngày đặt :{item.creatAt}
+                          </div>
                           <div>Số lượng: x{item.quantity}</div>
                         </div>
                         <div className="BuyFinish__price">

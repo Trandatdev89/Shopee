@@ -6,6 +6,7 @@ import { getUserById } from "../../Services/Users";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { reloadHeader } from "../../Actions";
+import getTimeCurrent from "../../Components/helper/getTimeCurrent";
 
 function PayDetails() {
   const { dataOrder } = useParams();
@@ -36,12 +37,13 @@ function PayDetails() {
     const sendOrder = order.filter((item) => {
       return parsedCheckItem.some((subItem) => subItem.idCheckbox === item.id);
     }); //Lọc ra những đơn hàng có trạng thái là chưa gửi
-
+    
     let res;
     for (let i = 0; i < sendOrder.length; i++) {
       const merge = {
         ...sendOrder[i], //hợp nhất các đơn hàng chưa gửi và kèm thêm thông tin của người đặt hàng
         ...value,
+        creatAt:getTimeCurrent()
       };
       res = await patchOrder(merge.id, merge);
     }

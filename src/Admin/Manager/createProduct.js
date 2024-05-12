@@ -4,6 +4,7 @@ import { postProduct } from "../../Services/Products";
 import { getCookie } from "../../Components/helper/cookie";
 import { useEffect, useState } from "react";
 import { get } from "../../utils/requestAPI";
+import getTimeCurrent from "../../Components/helper/getTimeCurrent";
 
 function CreateProduct() {
   const [cate,setCate]=useState([]);
@@ -31,6 +32,7 @@ function CreateProduct() {
   const handleFinish = async (values) => {
    
     values.idCompany = parseInt(idCompany);
+    values.createAt=getTimeCurrent();  //lấy ra thời gian tạo sản phẩm
     const res = await postProduct(values);
     if (res) {
       form.resetFields();

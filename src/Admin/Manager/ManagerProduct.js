@@ -72,6 +72,12 @@ function ManagerProduct() {
       responsive: ["xxl", "xl", "lg", "md", "sm", "xs"],
     },
     {
+      key: "createAT",
+      dataIndex: "createAt",
+      title: "Ngày tạo",
+      responsive: ["xxl", "xl", "lg", "md", "sm", "xs"],
+    },
+    {
       key: "brand",
       dataIndex: "brand",
       title: "Hãng",
