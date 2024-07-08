@@ -51,7 +51,8 @@ function Order() {
           check: e.target.checked,
         },
       ]);
-    } else {
+    } 
+    else {
       //nếu checked là false thì cần phải set nó về thành mảng chứa những phần tử chỉ là true bằng cách
       if (checkItem.some((item) => item.idCheckbox === id)) {
         //những sản phẩm đã tích nhưng lại ấn không tích thì cần phải reset lại
